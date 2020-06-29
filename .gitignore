@@ -1,3 +1,7 @@
+node_modules
+TOKENS
+
+
 # Logs
 logs
 *.log
