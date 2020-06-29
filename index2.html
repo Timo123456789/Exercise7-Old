@@ -1,0 +1,125 @@
+  
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" >
+    <link rel="stylesheet" href="../leaflet/leaflet.css" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-draw/dist/leaflet.draw.css"/>
+
+    <title>Leaflet Draw plugin</title>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <link href="src/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/mainpage">Busstops Page<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pointeditorpage">Point Editor Page</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/testpage">Test Page</a>
+      </li>
+
+     
+    </ul>
+  
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sm-6" id="mapdiv" style="height:400px">
+      </div>
+  <div class ="col-sm-6">
+            
+      <div id="data">
+          <textarea id="geojsontextarea"></textarea><br />
+          <button type="demo" onclick="getLocation()">use User Location</button>
+          <button type="demo" onclick="Add_GJSON_to_DB()">Add inserted GJSON to DB</button>
+          <button type="demo" onclick="show_DB()">show DB</button>
+          <button type="demo" onclick="check_radios()">delete selected Point from DB</button>
+          <button type="demo" onclick="clear_textarea()">clear input text area</button>
+          
+          <form id ="radiobuttons">
+  
+           
+          </form>
+         
+  
+      </div>
+      <p id="demo"></p>
+    </div>
+  </div> 
+</div>
+        
+
+
+        
+ 
+     
+  
+  
+  
+  
+  
+      
+    
+    
+    
+ 
+  
+
+</main>
+<script src="/leaflet/leaflet.js"></script>
+<script src="/leaflet-draw/leaflet.draw.js"></script>
+  <script src="src/script.js"> </script>
+  <script src="../jquery/jquery.min.js"> </script>
+  <script src="../bootstrap/css/bootstrap.css"> </script>
+  <script src="../bootstrap/js/bootstrap.min.js"> </script>
+  <script src="src/client.js"></script>
+
+
+  <footer class="container">
+    <p>&copy; Timo Lietmeyer, Mailto: timolietmeyer@uni-muenster.de</p>
+  </footer>
+</html>
+
+  
+
+

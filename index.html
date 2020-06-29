@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="src/style.css" />
+	<title>GeoSoftware1 Assignment 3</title>
+
+	<link rel="stylesheet" href="/leaflet/leaflet.css"
+
+   crossorigin=""/>
+	 <script src="/leaflet/leaflet.js"
+
+	crossorigin=""></script>
+</head>
+
+<body>
+	<div class="a" align="center">
+		<h1><a href="index.html"></a>GeoSoftware1 Assignment 3</h1>
+		
+
+		<div>
+			course: Geosoftware I SoSe 2020 <br>
+			authors:  Timo Lietmeyer <br> <br>
+
+			This page shows bus stops, the distance and bearing from the position of the user. The bus lines with their arrival and departure times for the nearest busstops are shown.
+		</div>
+		<br><br>
+		<a href="src/index2.html">Point Editor Page</a>
+		<a href="src/index3.html">Bootstrap Page</a>
+		<button type="demo" onclick="getLocation()">use User Location</button>
+		<button type="button" onclick="getXHRObject(0)">busstops</button>
+
+		<textarea id="readpoint">{"type":"FeatureCollection","features":[{"type":"Feature","properties":[],"geometry":{"type":"Point","coordinates":[7.435818,52.287317]}}]}</textarea>
+	
+			<button type="button" onclick="screen_favorites()">screen favorites</button>
+			<button type="button" onclick="check_radios_on_main_site()">screen busstop from selected point</button>
+
+		
+			<form id ="radiobuttons">
+
+				
+			</form>
+
+		<div id="map"></div>
+
+
+		<p id="demo"></p>
+
+
+		<table  id = "Table">
+			<tr>
+				<th>Point 1</th>
+				<th>busstop</th>
+				<th>distance in meters</th>
+				<th>bearing</th>
+			</tr>
+		</table>
+		<br>
+		<br>
+
+		<table  id = "Table2">
+			<tr >
+				<th >direction</th>
+				<th >line number</th>
+				<th >arrival time</th>
+				<th >predicted departure time</th>
+				<th >planned departure time</th>
+
+			</tr>
+
+
+		</table>
+
+	</div>
+
+
+	<script src="src/script.js"> </script>
+	<script src="/jquery/jquery.min.js"> </script>
+
+
+
+	
+
+</body>
+
+</html>
